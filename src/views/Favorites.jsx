@@ -21,14 +21,11 @@ const Favorites = () => {
         {
           fotos.filter(e => e.liked).map((foto, i) =>
             <Card key={i} className='text-white' onClick={() => borrar()}>
-              <Card.Img src={foto.src.tiny} alt={foto.alt} />
-              <Card.ImgOverlay>
-                <Card.Title className='text-end'>
-                </Card.Title>
+              <Card.Img src={foto.src.tiny} alt={foto.alt} />     
                 <Card.Footer className='text-white text-start '>
                   {foto.alt}
                 </Card.Footer>
-              </Card.ImgOverlay>
+            
             </Card>
           )
         }
